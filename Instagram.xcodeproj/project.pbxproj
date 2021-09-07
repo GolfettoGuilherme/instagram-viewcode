@@ -33,6 +33,7 @@
 		0EF9422526E6FE630066093A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF9422426E6FE630066093A /* DatabaseManager.swift */; };
 		0EF9422726E6FEF30066093A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF9422626E6FEF30066093A /* AuthManager.swift */; };
 		0EF9422926E6FF180066093A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF9422826E6FF180066093A /* StorageManager.swift */; };
+		0EF9422B26E702A90066093A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF9422A26E702A90066093A /* Extensions.swift */; };
 		1C6B0BDE6183404E6F7488FA /* Pods_InstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30615B0894B0FE86D708614 /* Pods_InstagramTests.framework */; };
 		5841B9344E49AC29DD00AFAC /* Pods_Instagram_InstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3764B4669D5D356A534321CF /* Pods_Instagram_InstagramUITests.framework */; };
 		D44CA22646C28B4A0E7ACD78 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C0BC75581D98F81E7B2E15 /* Pods_Instagram.framework */; };
@@ -89,6 +90,7 @@
 		0EF9422426E6FE630066093A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		0EF9422626E6FEF30066093A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		0EF9422826E6FF180066093A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		0EF9422A26E702A90066093A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		11C0BC75581D98F81E7B2E15 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		343F14F179026ED09689496D /* Pods-InstagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramTests.release.xcconfig"; path = "Target Support Files/Pods-InstagramTests/Pods-InstagramTests.release.xcconfig"; sourceTree = "<group>"; };
 		3764B4669D5D356A534321CF /* Pods_Instagram_InstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram_InstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +233,7 @@
 				0EF9422426E6FE630066093A /* DatabaseManager.swift */,
 				0EF9422626E6FEF30066093A /* AuthManager.swift */,
 				0EF9422826E6FF180066093A /* StorageManager.swift */,
+				0EF9422A26E702A90066093A /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -546,6 +549,7 @@
 				0E00CDB126E5D4D7006066BB /* PostViewController.swift in Sources */,
 				0E33280326E5D258000A3505 /* NotificationsViewController.swift in Sources */,
 				0E00CDAD26E5D4B3006066BB /* LoginViewController.swift in Sources */,
+				0EF9422B26E702A90066093A /* Extensions.swift in Sources */,
 				0E00CDB926E5D520006066BB /* SearchViewController.swift in Sources */,
 				0E33280626E5D276000A3505 /* ProfileViewController.swift in Sources */,
 				0EF9422726E6FEF30066093A /* AuthManager.swift in Sources */,
@@ -732,6 +736,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q6A28X826V;
 				INFOPLIST_FILE = Instagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -739,7 +744,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.golfetto.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -752,6 +757,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q6A28X826V;
 				INFOPLIST_FILE = Instagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -759,7 +765,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.golfetto.Instagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
